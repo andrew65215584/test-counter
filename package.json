@@ -2,7 +2,7 @@
   "name": "test-counter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andrew65215584.github.io/test-counter/",
+  "homepage": ".",
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^5.11.5",
