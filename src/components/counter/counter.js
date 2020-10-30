@@ -7,7 +7,7 @@ import "./counter.scss"
 
 function Counter() {
     const dispatch = useDispatch()
-    const value = useSelector(state => state.counter.value)
+    const value = useSelector(state => state.value)
 
     const handleIncrement = () => {
     dispatch(increment(1))
@@ -25,7 +25,7 @@ function Counter() {
 
     return (
         <div className="counter">
-            <p className="counter-value">{value}</p>
+            <p className="counter-value">{value ? value : 0}</p>
             <ul className="counter-list">
                <li className="counter-item"><button className="counter-btn" onClick={handleIncrement}>increment</button></li>
                <li className="counter-item"><button className="counter-btn" onClick={handleDecrement}>decrement</button></li>
